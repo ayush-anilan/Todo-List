@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css?family=Lexend+Deca");
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Lexend Deca';
+}
+
+.container{
+    display: grid;
+    width: 1920px;
+    height: 965px;
+    grid-template-rows: 200px;
+    grid-template-columns: 300px 500px;
+    grid-template-areas: 
+    "menu main"
+    ;
+}
+
+.menu menu{
+    display: grid;
+    grid-area: menu;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 350px;
+    height: 850px;
+    border-radius: 12px;
+    background-color: #f3f4f6;
+    
+}
+
+.menu menu h2{
+     color: #444444;
+     position: absolute;
+     top: 10px;
+     left: 20px;
+}
+
+.menu .search #search{
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    width: 300px;
+    height: 40px;
+    background-color: #f3f4f6;
+    border: none;
+    outline: 1px solid #9ca3af;
+    border-radius: 6px;
+    
+}
+::placeholder{
+    position: absolute;
+    padding-left: 40px;
+}
+
+img{
+    position: absolute;
+    padding-left: 30px;
+    padding-top: 70px;
+}
+
+.menu .tasks header{
+    position: absolute;
+    top: 140px;
+    left: 20px;
+    font-size: small;
+    color: #444444;
+}
+
+.menu ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    position: absolute;
+    color: #7c7c7c;
+    top: 180px;
+    left: 80px;
+}
+
+.menu ul li:first-child + li img{
+    position: absolute;
+    width: 20px;
+    right: 90px;
+    top: -70px;
+}
+.menu ul li img:nth-child(1){
+    position: absolute;
+    width: 30px;
+    right: 85px;
+    top: -45px;
+}
+
+.menu .projects header{
+    position: absolute;
+    top: 260px;
+    left: 20px;
+    font-size: small;
+    color: #444444;
+}
+
+.menu .projects #add{
+    position: absolute;
+    top: 300px;
+    left: 60px;
+    color: #7c7c7c;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+}
+.menu .projects #add img{
+    position: absolute;
+    width: 30px;
+    right: 110px;
+    top: -76px;
+}
+
+.menu .projects div #add:hover{
+    background-color: white;
+    width: 150px;
+    height: 50px;
+}
+
+
+.main main{
+    display: grid;
+    grid-area: main;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 102px;
+    width: 1514px;
+    height: 840px;
+
+}
+
+.main .date{
+    display: flex;
+    gap: 30px;
+    padding-left: 10px;
+    font-size: 50px;
+}
+
+.main .date .num{
+    display: flex;
+    justify-content: center;
+    border: 2px solid #7c7c7c;
+    height: 60px;
+    width: 60px;
+    border-radius: 12px;
+}
+
+#todo-list{
+    position: absolute;
+    top: 100px;
+    margin-left: 60px;
+    width: 70%;
+    border-collapse: collapse;
+}
+
+#todo-requirements td{
+    padding: 40px;
+
+}
+
+.book-info {
+    font-size: 20px;
+    position: relative;
+    left: 60px;
+    top: 10px;
+  }
+  .book-info i {
+    padding: 5px;
+    font-size: 20px;
+  }
+  .book-info i:hover{
+    cursor: pointer;
+  }
+
+  .fa-trash-alt {
+    color: red;
+    transition: 0.3s;
+  }
+
+.main .add{
+    display: flex;
+    justify-content: start;
+    position: absolute;
+    left: 65%;
+    width: 450px;
+    height: 850px;
+    background-color: #f3f4f6;
+    border-radius: 12px;
+}
+
+.main .add div{
+    position: absolute;
+    font-size: 30px;
+    top: 10px;
+    left: 20px;
+}
+
+.main .add menu{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding-top: 60px;
+    padding-left: 25px;
+    width: 400px;
+    gap: 20px;
+}
+
+.main .add menu input[type="text"]{
+    width: 400px;
+    height: 40px;
+    border-radius: 12px;
+    border: none;
+    outline: 1px solid #9ca3af;
+    background-color: #f3f4f6;
+}
+
+.main .add menu input[type="date"]{
+    width: 100px;
+    height: 25px;
+    border-radius: 6px;
+    border: none;
+    outline: 1px solid #9ca3af;
+    background-color: #f3f4f6;
+}
+
+.main .add menu #addbook{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    position: relative;
+    left: 120px;
+    top: 30px;
+    border-radius: 6px;
+    border: none;
+    background-color: #ffd43b;
+    font-weight: 700;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Todo List</title>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="menu">
+            <menu>
+                <h2>Menu</h2>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search">
+                    <img src="/src/img/search.svg" alt="">
+                </div>
+                <div class="tasks">
+                    <header>TASKS</header>
+                    <ul>
+                        <li><img src="/src/img/double-right-arrows-angles-svgrepo-com.svg" alt="">Upcoming</li>
+                        <li><img src="/src/img/checklist-svgrepo-com.svg" alt="">Today</li>
+                    </ul>
+                </div>
+            </menu>
+        </div>
+        <div class="main">
+            <main>
+                <div class="date">
+                    <div>Today</div>
+                    <div class="num">5</div>
+                </div>
+                <table id="todo-list">
+                    <thead id="'todo-requirements">
+                        <tr>
+                            <td>Title</td>
+                            <td>Description</td>
+                            <td>Due-Date</td>
+                            <td>Actions</td>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+
+                    </tbody>
+                </table>
+                <div class="add">
+                    <div>Task:</div>
+                    <form>
+                        <menu>
+                            <input type="text" name="title" id="title" class="title" placeholder="Title">
+                            <input type="text" name="description" id="description" class="description"
+                                placeholder="Description">
+                            <label for="Due Date">Due Date</label>
+                            <input type="date" name="date" id="date" class="date">
+                            <input type="button" value="ADD TASK" id="addbook">
+                        </menu>
+                    </form>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/0aae6b6553.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
